@@ -10,7 +10,7 @@ h6 { color: #888; text-transform: uppercase; letter-spacing: 2px; margin: 30px 0
 p { font-size: 0.8rem; line-height: 2; letter-spacing: 1px; }
 a { text-decoration: none !important }
 
-.btn-primary { display: inline-block; color: #000 !important; text-decoration: none !important; text-transform: uppercase; background: #fff !important; font-weight: 600; font-size: 15px; padding: 16px 60px; margin: 20px 0; letter-spacing: 2px; transition: all 0.3s ease }
+.btn-primary { display: inline-block; color: #000 !important; text-decoration: none !important; text-transform: uppercase; background: #fff !important; font-weight: 600; font-size: 15px; padding: 16px 60px; margin: 20px 0; letter-spacing: 2px; border: none; transition: all 0.3s ease }
 .btn-primary:hover { -webkit-box-shadow: 0px 0px 30px 2px rgba(5,116,201,1); box-shadow: 0px 0px 30px 2px rgba(5,116,201,1); }
 
 section { overflow: hidden; display: block; }
@@ -75,7 +75,7 @@ nav .logo img { width: 240px; }
 
 .modal-dialog { max-width: 800px; margin-top: 10vh; }
 .modal-content { border: none; background: none }
-.close { opacity: 1; color: #fff !important; position: absolute; top: 5px; right: 10px; z-index: 999; }
+.modal-content button.close { width: 16px; height: auto; opacity: 1; color: #fff !important; position: absolute; top: 5px; right: 10px; z-index: 999; }
 .characters .crew { background: #000; border: 1px solid #fff; padding: 20px; width: 100%; position: relative }
 .characters .crew img { width: 100%; }
 .characters .crew h2 { font-size: 2.5rem; margin-top: 30px; text-align: center }
@@ -388,7 +388,7 @@ nav .logo img { width: 240px; }
 	.icon-story { margin-top: 150px; }
 	.story p { width: 80%; line-height: 2; }
 	.thumb-characters li { width: 23%; height: 320px; }
-	.thumb-characters button { width: 100%; height: 100%; }	
+	.thumb-characters button { width: 100%; height: 100%; }
 	.gallery .owl-carousel .item h3 { font-size: 1.6rem }
 	.gallery .owl-carousel .item p { line-height: 1.4 }
 	.gallery .owl-carousel .owl-nav button.owl-next,

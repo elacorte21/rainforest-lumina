@@ -27,14 +27,24 @@ const Gallery = ({data_gallery}) => {
                     </div>
 
                     <div className="col-md-12 text-center">
-                        <div className="loop owl-carousel owl-theme wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-                            {data_gallery?.map((image) => {
-                                return(
-                                    <div className="item" key={image.img}>
-                                        <img src={'images/' + image.img} alt="" />
-                                    </div>
-                                )
-                            })}
+                        <div id="carouselExampleIndicators" className="carousel slide">
+                            <div className="carousel-inner">
+                                {data_gallery?.map((image) => {
+                                    return(
+                                        <div className="carousel-item active" key={image.img}>
+                                            <img src={'images/' + image.img} alt="" className="d-block w-100" />
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
 

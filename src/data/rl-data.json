@@ -1,4 +1,78 @@
 {
+    "crew": [
+        {
+            "id": 1,
+            "thumb": "thumb-char-ameng",
+            "name": "maya",
+            "image": "img-personality-maya.jpg",
+            "personality": "CREATIVITY",
+            "description": "Maya understands the balance between the rainforest, the animal inhabitants, and humans. She is a source of wisdom as the crew strive to live by their motto, “We Are One.”",
+			"facts": "In Hinduism, ‘Maya’ represents the natural power of the universe, echoing her role as the nurturer of the rainforest."
+        },
+        {
+            "id": 2,
+            "thumb": "thumb-char-pangolin",
+            "name": "waja",
+            "image": "img-personality-waja.jpg",
+            "personality": "RESILIENCE",
+            "description": "A bit clumsy and shy, no matter how many times he falls down, Waja always gets up and tries again. He eats all day long and is a military history buff.",
+			"facts": "‘Waja’ means ‘steel’ in Javanese, alluding to his strong defensive armour."
+        },
+        {
+            "id": 3,
+            "thumb": "thumb-char-fox",
+            "name": "poncho",
+            "image": "img-personality-poncho.jpg",
+            "personality": "GENEROSITY",
+            "description": "A fast-flying acrobatic spaz, Poncho loves to show off loop-de-loops and always wants an audience for his daredevil tricks.",
+			"facts": "When Poncho spreads his wings and flies, his wing membranes fan out like a poncho."
+        },
+        {
+            "id": 4,
+            "thumb": "thumb-char-tiger",
+            "name": "tairee",
+            "image": "img-personality-tairee.jpg",
+            "personality": "COURAGE",
+            "description": "Tairee wears his stripes proudly. He is adventurous and loves to surprise the other crew members by sneaking up on them.",
+			"facts": "‘Tairee’ comes from ‘Tairiyam’ which means ‘courage’ in Tamil, highlighting the virtue that he embodies."
+        },
+        {
+            "id": 5,
+            "thumb": "thumb-char-hornbill",
+            "name": "hornbills",
+            "image": "img-personality-hornbills.jpg",
+            "personality": "TEAMWORK",
+            "description": "A charming dynamic duo, Casquette & Colette love haute couture and getting their hands dirty on building projects.",
+			"facts": "Casquette is named after his casque, the hollow crest on the beaks of many hornbills."
+        },
+        {
+            "id": 6,
+            "thumb": "thumb-char-otter",
+            "name": "bob",
+            "image": "img-personality-bob.jpg",
+            "personality": "PLAYFULNESS",
+            "description": "Joyful and chatty, Bob loves making speeches and being the center of attention. He is a natural leader and always knows how to make a mission fun.",
+			"facts": "Bob likes to bob around in the rivers and streams, frolicking in the water just for fun."
+        },
+        {
+            "id": 7,
+            "thumb": "thumb-char-chameleon",
+            "name": "bisou",
+            "image": "img-personality-bisou.jpg",
+            "personality": "PASSION",
+            "description": "Bisou-Bisou is known for his Parisian charm and fiery personality. He always wears his heart on his sleeve, changing colours to reflect his inner emotions.",
+			"facts": "‘Bisou’ means ‘kiss’ in French, like how Bisou-Bisou sends kisses across the forest with his long tongue."
+        },
+        {
+            "id": 8,
+            "thumb": "thumb-char-sloth",
+            "name": "slip",
+            "image": "img-personality-slip.jpg",
+            "personality": "PATIENCE",
+            "description": "Happy and relaxed, Slip is always a few minutes behind the action but somehow right on time. This crew member is often found meditating in a yoga pose.",
+			"facts": "Slip would literally slip into a state of trance when he meditates in a yoga pose."
+        }
+    ],
     "gallery": [
         {
             "id": 1,
@@ -23,6 +97,23 @@
         {
             "id": 6,
             "img": "img-gallery-05.jpg"
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "quote": "A unique experience especially you like to walk through the dark with the mystery atmosphere. Suitable to go with friends, family or a romantic adventure date!! By the way, I went twice.. Once with my friends and one for a secret date!! Totally a cool gem to explore!",
+            "by": "Mun Yee, Klook"
+        },
+        {
+            "id": 2,
+            "quote": "Interesting lighting designs lit up Singapore Zoo in a way that I've not seen it before. It's like entering a different dimension.",
+            "by": "darrenn9, Instagram"
+        },
+        {
+            "id": 3,
+            "quote": "Great experience especially for kids! The light experience definitely brought them to a different world, as well as the interactive stations. Definitely worth visiting!",
+            "by": "Kellyn, Klook"
         }
     ]
 }
