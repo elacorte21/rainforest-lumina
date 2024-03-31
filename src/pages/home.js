@@ -15,10 +15,6 @@ import ImgFooterLogo7 from '../assets/images/logo-footer-07.png';
 import ImgFooterLogo8 from '../assets/images/logo-footer-08.png';
 import ImgFooterLogo9 from '../assets/images/logo-footer-09.png';
 import ImgFooterLogo10 from '../assets/images/logo-lumina-nightwalks.png';
-import ImgFooterLogoJBP from '../assets/images/park-bird-footer.png';
-import ImgFooterLogoNS from '../assets/images/park-night-safari-footer.png';
-import ImgFooterLogoRS from '../assets/images/park-river-safari-footer.png';
-import ImgFooterLogoSZ from '../assets/images/park-singapore-zoo-footer.png';
 
 import ImgMap from '../assets/images/img-map.jpg';
 import IconDown from '../assets/images/icon-down.svg';
@@ -35,7 +31,8 @@ import Data from '../data/rl-data.json';
 
 const Home = () => {
     let rl_data = Data;
-    console.log(rl_data);
+    //console.log(rl_data);
+
     return(
         <>
             <section id="main" className="target main">
@@ -45,9 +42,9 @@ const Home = () => {
                     <img className="footerlogo tablet-push" src={ImgFooterLogos} alt="" />
                 </div>
                 
-                <footer className="text-center">
+                <div className="footer text-center">
                     <p><a className="scrollpg" href="#story"><img src={IconDown} width="64" className="animated infinite btnDown" alt="" /></a></p>
-                </footer>
+                </div>
 		  
                 <div className="main-left wow slideInLeft" data-wow-duration="3s">
                     <img src={ImgMainLeftTablet} className="imgmobile" alt="" />
@@ -223,23 +220,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                
-                <footer>
-                    Wildlife Reserves Singapore Group
-                    <ul className="list-park">
-                        <li><a href="..." title="Jurong Bird Park"><img src={ImgFooterLogoJBP} alt="Jurong Bird Park" /></a></li>
-                        <li><a href="..." title="Night Safari"><img src={ImgFooterLogoNS} alt="Night Safari" /></a></li>
-                        <li><a href="..." title="River Safari"><img src={ImgFooterLogoRS} alt="River Safari" /></a></li>
-                        <li><a href="..." title="Singapore Zoo"><img src={ImgFooterLogoSZ} alt="Singapore Zoo" /></a></li>
-                    </ul>
-                    
-                    &copy; Copyright 2018. Wildlife Reserves Singapore Group. <span>All rights reserved.</span>
-                    <div className="contact-links">
-                        <a href="..." target="_blank">Terms and conditions</a>
-                        <a href="..." target="_blank">Privacy policy</a>
-                        <a href="..." target="_blank">Data protection policy</a>
-                    </div>
-                </footer>
             </section>
         </>
     )

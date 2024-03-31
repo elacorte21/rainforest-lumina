@@ -9,6 +9,7 @@ h4 { font-weight: 400; text-transform: uppercase; letter-spacing: 2px; margin: 2
 h6 { color: #888; text-transform: uppercase; letter-spacing: 2px; margin: 30px 0 10px; font-size: 1.3rem; line-height: 1.5; }
 p { font-size: 0.8rem; line-height: 2; letter-spacing: 1px; }
 a { text-decoration: none !important }
+button { outline: none !important; cursor: pointer; }
 
 .btn-primary { display: inline-block; color: #000 !important; text-decoration: none !important; text-transform: uppercase; background: #fff !important; font-weight: 600; font-size: 15px; padding: 16px 60px; margin: 20px 0; letter-spacing: 2px; border: none; transition: all 0.3s ease }
 .btn-primary:hover { -webkit-box-shadow: 0px 0px 30px 2px rgba(5,116,201,1); box-shadow: 0px 0px 30px 2px rgba(5,116,201,1); }
@@ -49,7 +50,7 @@ nav .logo img { width: 240px; }
 .main .imgdesktop { display: none }
 .main .imgmobile { display: block }
 .main-middle { position: absolute; width: 65vw; bottom: 0; right: 0; z-index: 5 }.main-middle { display: none }
-.main footer { display: block; width: 100%; position: absolute !important; bottom: 0 !important; z-index: 7; }
+.main .footer { display: block; width: 100%; position: absolute !important; bottom: 0 !important; z-index: 7; }
 .main .spark { width: 100%; height: 100vh; z-index: 2 }
 .sparkley { background: #3e5871; color: white; border: none; padding: 16px 36px; border-radius: 3px; transition: all 0.25s ease; margin: 0 1em 1em; }
 .main .tablet-push { margin-top: 35vh }
@@ -111,18 +112,17 @@ nav .logo img { width: 240px; }
 .maps-container { max-width: 1000px; position: relative; margin: auto; }
 
 .gallery { min-height: 100vh; background: url(../images/bg-gallery.jpg) no-repeat center; background-size: cover; color: #fff; overflow: hidden; }
-.gallery .owl-carousel { width: 80vw;  margin: 0 auto 50px; }
-.gallery .owl-carousel .item { min-height: 10rem; color: #fff; background: #000; -webkit-box-shadow: 1px 1px 30px 10px rgba(255,255,255,0.75); -moz-box-shadow: 1px 1px 30px 10px rgba(255,255,255,0.75); box-shadow: 1px 1px 30px 10px rgba(255,255,255,0.75); margin: 0 30px }
-.gallery .owl-carousel .item img { display: block; width: 100%; }
-.gallery .owl-carousel .owl-nav { position: relative; }
-.gallery .owl-carousel .owl-nav button.owl-next { background: url(../images/icon-nav-gallery-right.png) no-repeat; position: absolute; top: -18vh; right: -75px }
-.gallery .owl-carousel .owl-nav button.owl-prev { background: url(../images/icon-nav-gallery-left.png) no-repeat; position: absolute; top: -18vh; left: -75px }
-.gallery .owl-carousel .owl-nav button.owl-next,
-.gallery .owl-carousel .owl-nav button.owl-prev { display: block; width: 91px; height: 91px; border: none; outline: 0; }
-.gallery .owl-carousel .owl-nav button.owl-next span,
-.gallery .owl-carousel .owl-nav button.owl-prev span { display: none; }
-.gallery .owl-carousel .owl-nav button.owl-next:hover,
-.gallery .owl-carousel .owl-nav button.owl-prev:hover { background-position: bottom; }
+.gallery .carousel { width: 80vw;  margin: 0 auto 50px; -webkit-box-shadow: 1px 1px 30px 10px rgba(255,255,255,0.75); -moz-box-shadow: 1px 1px 30px 10px rgba(255,255,255,0.75); box-shadow: 1px 1px 30px 10px rgba(255,255,255,0.75); }
+.gallery .carousel .carousel-item { min-height: 10rem; color: #fff; background: #000; margin: 0; }
+.gallery .carousel .carousel-item img { display: block; width: 100%; }
+.gallery .carousel button.carousel-control-next { background: url(../images/icon-nav-gallery-right.png) no-repeat; position: absolute; top: 40%; right: -75px }
+.gallery .carousel button.carousel-control-prev { background: url(../images/icon-nav-gallery-left.png) no-repeat; position: absolute; top: 40%; left: -75px }
+.gallery .carousel button.carousel-control-next,
+.gallery .carousel button.carousel-control-prev { display: block; width: 91px; height: 91px; border: none; outline: 0; }
+.gallery .carousel button.carousel-control-next span,
+.gallery .carousel button.carousel-control-prev span { display: none; }
+.gallery .carousel button.carousel-control-next:hover,
+.gallery .carousel button.carousel-control-prev:hover { background-position: bottom; }
 
 .carousel-control.left { background:none; color:#fff }
 .carousel-control.right { background:none; color:#fff }
@@ -131,7 +131,7 @@ nav .logo img { width: 240px; }
 .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span { background: #869791; }
 .owl-dots .owl-dot span { width: 10px; height: 10px; margin: 5px 7px; background: #D6D6D6; display: block; transition: opacity .2s ease; border-radius: 30px; }
 
-.owl-carousel .owl-item { margin-top: 50px; margin-bottom: 50px; }
+.carousel .carousel-item { margin-top: 50px; margin-bottom: 50px; }
 
 .icon-tickets { margin-top: 70px; }
 .tickets { min-height: 100vh; background: url(../images/bg-tickets.jpg) no-repeat center fixed; background-size: cover; color: #fff }
@@ -143,15 +143,6 @@ nav .logo img { width: 240px; }
 .other h2 { margin: 20vh 0 50px }
 .vline { background: #fff; display: block; width: 1px; height: 60px; margin: auto; }
 
-.four04 { min-height: 100vh; background: url(../images/bg-tickets.jpg) no-repeat center; background-size: cover; color: #fff; }
-.four04 h1 { margin: 20px 0 50px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; }
-.four04 h3 { text-transform: uppercase; letter-spacing: 4px; margin: 15px 0; font-size: 20px; }
-
-.other footer,
-.four04 footer,
-.faq footer { background: #000; padding: 20px 0; width: 100%; font-size: 0.7rem; text-align: center; margin-top: 120px; }
-.other footer a,
-.faq footer a { color: #fff; }
 .list-park { margin: 10px 0 20px; padding: 0; list-style: none; }
 .list-park li { display: inline-block; margin: 0 10px; }
 .list-park img { height: 32px; }
@@ -198,13 +189,6 @@ nav .logo img { width: 240px; }
 
 .modal a { color: #000 !important }
 
-/*.announce { display: none }
-.announce p { text-align: center; font-size: 12px; margin: 10px; line-height: 1.4 }
-.announce-on { margin-top: 50px }
-.announce-on .announce { display: block; background: #ccc; position: fixed; height: 50px; width: 100%; top: 0; left: 0; z-index: 997; }
-.announce-on nav { top: 50px; left: 0; z-index: 998; }
-.announce-on .nav-mob { top: 64px; }*/
-
 .announce { display: none; background: #000; position: fixed; width: 100%; bottom: 0; left: 0; opacity: 0.9; z-index: 997 }
 .announce2 { display: none; background: #7b3aaf; position: fixed; width: 100%; bottom: 0; left: 0; opacity: 0.9; z-index: 997 }
 .announce p { position: relative; font-size: 12px; margin: 20px 60px; line-height: 1.4; text-align: center; color: #fff }
@@ -221,6 +205,9 @@ nav .logo img { width: 240px; }
 .blurb { display: block; position: fixed; bottom: 40px; left: -310px; z-index: 500; transition: all 1s ease; }
 .blurb:hover { left: 0; }
 .blurb.start { left: 0; }
+
+footer { background: #000; color: #fff; padding: 20px 0; width: 100%; font-size: 0.7rem; text-align: center; }
+footer a { color: #fff; }
 
 /* iPhone 6/7/8 */
 @media (min-device-width: 320px) and (orientation: portrait) {
@@ -240,9 +227,9 @@ nav .logo img { width: 240px; }
 	
 	.imgmobile { width: 100%; }
 	
-	.gallery .owl-carousel .owl-nav button.owl-next, .gallery .owl-carousel .owl-nav button.owl-prev { width: 50px; height: 50px; }
-	.gallery .owl-carousel .owl-nav button.owl-prev { left: -35px; background-size: cover; }
-	.gallery .owl-carousel .owl-nav button.owl-next { right: -35px; background-size: cover; }
+	.gallery .carousel button.carousel-control-next, .gallery .carousel button.carousel-control-prev { width: 50px; height: 50px; }
+	.gallery .carousel button.carousel-control-prev { left: -35px; background-size: cover; }
+	.gallery .carousel button.carousel-control-next { right: -35px; background-size: cover; }
 }
 
 /* iPhone X */
@@ -301,9 +288,7 @@ nav .logo img { width: 240px; }
 	
 	.youtube { width: 45vw; height: 45vh; }
 	.youtube iframe { height: 45vh; }
-	.gallery .owl-carousel { width: 48vw; }
-	.gallery .owl-carousel .owl-nav button.owl-next,
-	.gallery .owl-carousel .owl-nav button.owl-prev { top: -40vh; }
+	.gallery .carousel { width: 48vw; }
 	
 	.tickets-left { float: left; width: 50%; padding: 0 5%; margin: 20px 0; }
 	.tickets-right { float: left; width: 49%; border-top: none; border-left: 1px solid #fff; padding: 0 5%; margin: 20px 0; }
@@ -327,9 +312,7 @@ nav .logo img { width: 240px; }
 	.map .map-container { width: 60vw; }
 	.youtube { width: 45vw; height: 50vh; }
 	.youtube iframe { height: 50vh; }
-	.gallery .owl-carousel { width: 50vw; }
-	.gallery .owl-carousel .owl-nav button.owl-next,
-	.gallery .owl-carousel .owl-nav button.owl-prev { top: -55vh; }
+	.gallery .carousel { width: 50vw; }
 	.main-middle { display: block; }.tickets .border { width: 80%; }
 	.tickets-left { float: left; width: 50%; padding: 0 5%; margin: 20px 0; }
 	.tickets-right { float: left; width: 49%; border-top: none; border-left: 1px solid #fff; padding: 0 5%; margin: 20px 0; }	
@@ -349,7 +332,7 @@ nav .logo img { width: 240px; }
 	.icon-story { margin-top: 80px; width: 80px; }
 	.youtube { width: 45vw; height: 20vh; }
 	.youtube iframe { height: 20vh; }
-	.gallery .owl-carousel { width: 50vw; }
+	.gallery .carousel { width: 50vw; }
 	.icon-tickets { margin-top: 120px; }
 	.thumb-characters li { height: 250px; }
 }
@@ -366,8 +349,6 @@ nav .logo img { width: 240px; }
 	.icon-characters,
 	.icon-tickets { margin-top: 120px; }
 	.thumb-characters { width: 95%; }
-	.gallery .owl-carousel .owl-nav button.owl-next,
-	.gallery .owl-carousel .owl-nav button.owl-prev { top: -30vh; }
 	.youtube { width: 45vw; height: 35vh; }
 	.youtube iframe { height: 35vh; }
 	.contact-details { padding: 50px 0; text-align: center; }
@@ -389,10 +370,10 @@ nav .logo img { width: 240px; }
 	.story p { width: 80%; line-height: 2; }
 	.thumb-characters li { width: 23%; height: 320px; }
 	.thumb-characters button { width: 100%; height: 100%; }
-	.gallery .owl-carousel .item h3 { font-size: 1.6rem }
-	.gallery .owl-carousel .item p { line-height: 1.4 }
-	.gallery .owl-carousel .owl-nav button.owl-next,
-	.gallery .owl-carousel .owl-nav button.owl-prev { top: -35vh; }
+	.gallery .carousel .carousel-item h3 { font-size: 1.6rem }
+	.gallery .carousel .carousel-item p { line-height: 1.4 }
+	.gallery .carousel button.carousel-control-next,
+	.gallery .carousel button.carousel-control-prev { top: -35vh; }
 	.tickets-left,
 	.tickets-right { padding: 30px 5%; }
 	.sponsors img { margin: 0 30px; width: 180px; }

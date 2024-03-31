@@ -22,14 +22,14 @@ const Crew = ({data_crew}) => {
 			    <ul className="row thumb-characters wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
 					{data_crew?.map((crew) => {
 						return(
-							<li>
-								<button key={crew.id} className={crew.thumb} data-toggle="modal" data-target={'#' + crew.name}></button>
+							<li key={crew.id}>
+								<button className={crew.thumb} data-bs-toggle="modal" data-bs-target={'#' + crew.name}></button>
 								
-								<div className="modal fade" id={crew.name} tabindex="-1" role="dialog" aria-hidden="true">
+								<div className="modal fade" id={crew.name} role="dialog" aria-hidden="true">
 									<div className="modal-dialog" role="document">
 										<div className="modal-content">
 											<div className={'crew ' + crew.name}>
-												<button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<button type="button" className="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 												<div className="row">
 													<div className="col-md-6">
 														<img src={'images/' + crew.image} alt={crew.name} />

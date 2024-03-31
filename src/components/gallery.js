@@ -4,8 +4,7 @@ import IconDown from '../assets/images/icon-down.svg';
 import IconGallery from '../assets/images/icon-gallery.png';
 
 const Gallery = ({data_gallery}) => {
-
-    console.log(data_gallery);
+    
     return(
         <section id="gallery" className="target gallery">
 		    <div className="container">
@@ -31,8 +30,8 @@ const Gallery = ({data_gallery}) => {
                             <div className="carousel-inner">
                                 {data_gallery?.map((image) => {
                                     return(
-                                        <div className="carousel-item active" key={image.img}>
-                                            <img src={'images/' + image.img} alt="" className="d-block w-100" />
+                                        <div className="carousel-item" key={image.img}>
+                                            <img src={'images/' + image.img} alt="" className="d-block" />
                                         </div>
                                     )
                                 })}

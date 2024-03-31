@@ -4,8 +4,7 @@ import IconDown from '../assets/images/icon-down.svg';
 import IconStory from '../assets/images/icon-story.svg';
 
 const Reviews = ({data_reviews}) => {
-
-    console.log(data_reviews);
+    
     return(
         <section id="reviews" className="target reviews">
             <div className="container">
